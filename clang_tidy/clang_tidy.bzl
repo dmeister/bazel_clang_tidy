@@ -83,7 +83,7 @@ def _rule_sources(ctx):
         Returns True if the file type matches one of the permitted srcs file types for C and C++ header/source files.
         """
         permitted_file_types = [
-            ".c", ".cc", ".cpp", ".cxx", ".c++", ".C", ".h", ".hh", ".hpp", ".hxx", ".inc", ".inl", ".H",
+            ".c", ".cc", ".cpp", ".cxx", ".c++", ".C",
         ]
         for file_type in permitted_file_types:
             if src.basename.endswith(file_type):
